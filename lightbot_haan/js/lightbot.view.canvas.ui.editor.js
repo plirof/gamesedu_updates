@@ -108,7 +108,7 @@ $(document).ready(function() {
             instructions.push(new lightBot.bot.instructions.TurnRightInstruction());
             break;
 
-//-----------200224 jonh Knight move left & right  ---
+//-----------200224c jonh Knight move left & right  ---
           case 'knightLeft':
             console.log("112 lightbot.view.canvas.ui.editor.js knightLeft ");
             //instructions.push(new lightBot.bot.instructions.KnightLeftInstruction());
@@ -126,6 +126,27 @@ $(document).ready(function() {
             instructions.push(new lightBot.bot.instructions.TurnRightInstruction());
             instructions.push(new lightBot.bot.instructions.WalkInstruction());
             break;
+
+          case 'bishopLeft':
+            console.log("112 lightbot.view.canvas.ui.editor.js bishopLeft ");
+            //instructions.push(new lightBot.bot.instructions.KnightLeftInstruction());
+            instructions.push(new lightBot.bot.instructions.WalkInstruction());
+            instructions.push(new lightBot.bot.instructions.TurnLeftInstruction());
+            instructions.push(new lightBot.bot.instructions.WalkInstruction());
+            instructions.push(new lightBot.bot.instructions.TurnRightInstruction());
+            
+            break;
+
+          case 'bishopRight':
+            console.log("121 lightbot.view.canvas.ui.editor.js bishopRight ");
+            //instructions.push(new lightBot.bot.instructions.KnightLeftInstruction());
+            instructions.push(new lightBot.bot.instructions.WalkInstruction());
+            instructions.push(new lightBot.bot.instructions.TurnRightInstruction());
+            instructions.push(new lightBot.bot.instructions.WalkInstruction());
+            instructions.push(new lightBot.bot.instructions.TurnLeftInstruction());
+            
+            break;
+
 
 //-------------------------------------------------            
           case 'repeat':
